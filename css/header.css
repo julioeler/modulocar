@@ -1,0 +1,128 @@
+.headerBackground {
+  background-color: var(--corS01);
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  position: relative;
+}
+
+.headerMenu {
+  display: flex; 
+  gap: 40px;
+}
+
+.headerMenu a {
+  color: var(--corBRANCA);
+  font-weight: var(--pesoBold);
+  font-size: var(--tamanhoLink);
+  padding: 8px;
+  display: flex;
+  border-radius: 4px;
+}
+
+ .js .headerMenu.ativo {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 10px;
+  margin-top: 26px;
+  gap: 16px;
+  position: absolute;
+  right: 0px;
+  width: 116px;
+  background-color: black;
+  border-radius: 0px 0px 4px 4px;
+  animation: abrirMenu 0.2s ease-out;
+}
+
+.headerMenu.ativo a{
+  background-color: var(--corS01);
+}
+
+/* .headerMenu a::before{
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: aqua;
+  position: absolute;
+  bottom: 20px;
+} */
+
+.headerMenu a:hover{
+  color: var(--corTITULOCONTRASTE);
+  transform: scale(1.1);
+}
+
+.menuIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menuIcon span {
+  height: 4px;
+  width: 33px;
+  background-color: var(--corBRANCA);
+  display: block;
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.menuIcon.ativo span:nth-child(1) {
+  transform: rotate(45deg) translateY(12px);
+  transition: 0.2s;
+}
+.menuIcon.ativo span:nth-child(2) {
+  opacity: 0;
+  transition: 0s;
+}
+.menuIcon.ativo span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-12px);
+  transition: 0.2s;
+}
+
+.menuHamburguer {
+  display: none;
+  gap: 12px;
+}
+
+.menuHamburguer p {
+  color: var(--corBRANCA);
+  text-transform: uppercase;
+  font-weight: var(--pesoBold);
+}
+
+/* A CLASSE .JS FAZ O MENU HAMBURGUER SÓ APARECER CASO O JS ESTIVER ATIVO OU NAVEGADOR DO USUARIO TENHA SUPORTE PARA JS, CASO NÃO, O MENU APARECERÁ NA VERSÃO NORMAL. O JS É INCLUIDO NO HEAD DO HTML */
+
+@media(max-width:600px) {
+.js .headerMenu  {
+    display: none;
+    width: inherit;
+  }
+
+  .js .headerMenu a:hover{
+    transform: none;
+    color: var(--corBRANCA);
+  }
+  
+.js .menuHamburguer {
+    display: flex;
+  }
+}
+
+@keyframes abrirMenu {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
