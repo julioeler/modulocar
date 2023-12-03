@@ -1,6 +1,5 @@
 
-
-
+// JS HEADER
 const MENULISTA = document.querySelector('.jsHeaderMenu');
 const MENU = document.querySelector('.jsMenuHamburguer');
 const MENUICONE = document.querySelector('.jsMenuIcon');
@@ -13,4 +12,4 @@ function ativarMenu(){
 MENU.addEventListener('click', ativarMenu);
 }
 
-
+//-----------------------------------------------------
