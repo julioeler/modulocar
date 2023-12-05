@@ -1,4 +1,4 @@
-.botaoCheio{
+.botaoCheioP02{
   display: inline-block;
   padding: 16px 28px;
   background-color: var(--corP02);
@@ -8,5 +8,24 @@
   border-radius: 4px;
   box-shadow: 0 1px 4px #761400;
   text-transform: uppercase;
+}
+.botaoCheioE03{
+  display: inline-block;
+  padding: 16px 28px;
+  background-color: var(--corE03);
+  color: var(--corBRANCA);
+  font-weight: var(--pesoBold);
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #124674;
+  text-transform: uppercase;
+}
+
+.botaoCheioE03:hover{
+  background-color: #1b5385;
+}
+
+.botaoCheioP02:hover{
+  background-color: #761400;
 }
 

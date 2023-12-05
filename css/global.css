@@ -37,13 +37,13 @@
   --tamanhoH3m: 1rem;
   --tamanhoTITULOm: 1.375rem;
   --tamanhoParagrafom: 1rem;
-  --tamanhoNavm: 0.75rem;
   --tamanhoLinkm: 0.75rem;
 
 }
 
 html {
   font-family: 'Urbanist', Arial, Helvetica, sans-serif;
+  color: var(--corS01);
 }
 
 body,html,
@@ -53,7 +53,7 @@ h3,
 p,
 span,
 li,
-ul {
+ul, section {
   margin: 0px;
   padding: 0px;
 }

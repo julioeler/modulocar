@@ -12,7 +12,7 @@
   padding: 0px 0px 0px 16px;
 }
 
-.mainContent {
+.mainConteudo {
   grid-column: 1;
   align-self: center;
   margin-top: 80px;
@@ -46,11 +46,11 @@
   background-color: var(--corP01);
 }
 
-.mainImage {
+.mainImagem {
   grid-column: 2;
 }
 
-.mainImage img {
+.mainImagem img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -67,9 +67,6 @@
     font-size: 2.5rem;
   }
 
-  .mainParagrafo {
-    font-size: var(--tamanhoParagrafom);
-  }
 }
 
 @media(max-width: 600px) {
@@ -77,11 +74,11 @@
     grid-template-columns: 1fr;
     padding: 0px 16px;
   }
-
-  .mainImage {
+  
+  .mainImagem {
     display: none;
   }
-
+  
   .mainBackground {
     content: '';
     background-image: url("../imagens/carros/peugeotMainMobile.jpg");
@@ -89,7 +86,7 @@
     background-size: cover;
     background-position: center;
   }
-
+  
   .mainTitulo {
     font-size: var(--tamanhoH1m);
     color: var(--corBRANCA);
@@ -99,6 +96,7 @@
   .mainParagrafo {
     color: var(--corBRANCA);
     text-shadow: 2px 2px 16px #000;
+    font-size: var(--tamanhoParagrafom);
   }
   .mainParagrafo .destacado {
     color: var(--corBRANCA);
