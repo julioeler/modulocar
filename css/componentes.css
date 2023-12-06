@@ -11,7 +11,7 @@
 }
 .botaoCheioE03{
   display: inline-block;
-  padding: 16px 28px;
+  padding: 16px 60px 16px 28px;
   background-color: var(--corE03);
   color: var(--corBRANCA);
   font-weight: var(--pesoBold);
@@ -19,6 +19,7 @@
   border-radius: 4px;
   box-shadow: 0 1px 4px #124674;
   text-transform: uppercase;
+  position: relative;
 }
 
 .botaoCheioE03:hover{
@@ -29,3 +30,15 @@
   background-color: #761400;
 }
 
+.botaoCheioE03::after {
+  content: '→';
+  right: 32px;
+  top: 14px;
+  position: absolute;
+  transition: 0.2s;
+}
+
+.botaoCheioE03:hover::after {
+  right: 24px;
+  transition: 0.2s;
+}

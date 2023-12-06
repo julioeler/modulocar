@@ -1,6 +1,6 @@
 .sobre {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 100px auto 0px auto;
   padding: 0px 16px;
   box-sizing: border-box;
   display: flex;
@@ -62,8 +62,6 @@
   margin-bottom: 32px;
 }
 
-
-
 .cardTitulo {
   font-size: var(--tamanhoParagrafo);
   line-height: var(--alturaTexto);
@@ -85,33 +83,18 @@
   font-weight: var(--pesoBold);
 }
 
-.botaoSobre {
-  align-self: end;
-  padding: 16px 60px 16px 28px;
-  position: relative;
-  background-color: var(--corE03);
+.sobreBotao {
+  display: flex;
+  justify-content: end;
   margin-top: 50px;
   margin-right: 16px;
+  margin-bottom: 100px;
 }
-
-.botaoSobre::after {
-  content: '→';
-  right: 32px;
-  top: 14px;
-  position: absolute;
-  transition: 0.2s;
-}
-
-.botaoSobre:hover::after {
-  right: 24px;
-  transition: 0.2s;
-}
-
 
 
 @media(max-width: 600px) {
   .sobre {
-    margin-top: 64px;
+    margin-top: 48px;
   }
 
   .sobreConteudo h2 {
@@ -126,6 +109,7 @@
 
   .sobreConteudo {
     margin-bottom: 32px;
+    padding: 12px;
   }
 
   .sobreCard {
@@ -134,7 +118,7 @@
   }
 
   .card {
-    padding: 48px 0px;
+    padding: 48px 12px;
     margin-bottom: 16px;
   }
 
@@ -157,7 +141,9 @@
     width: 48px;
   }
 
-  .botaoSobre {
+  .sobreBotao {
     margin-top: 32px;
+    margin-bottom: 80px;
+    justify-content: center;
   }
 }
