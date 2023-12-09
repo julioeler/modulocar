@@ -89,16 +89,16 @@
   
   .mainTitulo {
     font-size: var(--tamanhoH1m);
-    color: var(--corBRANCA);
+    color: var(--corBranca);
     text-shadow: 0 0 5px rgba(0, 20px, 2px, 10px);
   }
   
   .mainParagrafo {
-    color: var(--corBRANCA);
+    color: var(--corBranca);
     text-shadow: 2px 2px 16px #000;
     font-size: var(--tamanhoParagrafom);
   }
   .mainParagrafo .destacado {
-    color: var(--corBRANCA);
+    color: var(--corBranca);
 }
 }

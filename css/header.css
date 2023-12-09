@@ -19,7 +19,7 @@
 }
 
 .headerMenu a {
-  color: var(--corBRANCA);
+  color: var(--corBranca);
   font-weight: var(--pesoBold);
   font-size: var(--tamanhoLink);
   padding: 8px 0px;
@@ -35,7 +35,7 @@
   width: 0px;
   height: 2px;
   position: absolute;
-  background-color: var(--corBRANCA);
+  background-color: var(--corBranca);
   top:30px;
   transition: 0.1s;
 }
@@ -72,7 +72,7 @@ width: 100%;
 .menuIcon span {
   height: 4px;
   width: 33px;
-  background-color: var(--corBRANCA);
+  background-color: var(--corBranca);
   display: block;
   transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -96,7 +96,7 @@ width: 100%;
 }
 
 .menuHamburguer p {
-  color: var(--corBRANCA);
+  color: var(--corBranca);
   text-transform: uppercase;
   font-weight: var(--pesoBold);
 }

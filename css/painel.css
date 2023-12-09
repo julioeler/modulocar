@@ -1,0 +1,167 @@
+.painelBackground {
+  background-color: var(--corPreta);
+}
+
+.painel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.painelTitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  gap: 16px;
+}
+
+.painelTitulo h3 {
+  color: var(--corBranca);
+  font-size: var(--tamanhoH3);
+  font-weight: var(--pesoRegular);
+  text-align: center;
+}
+
+.painelTitulo h2 {
+  color: var(--corBranca);
+  font-size: var(--tamanhoH2);
+  font-weight: var(--pesoBold);
+  text-align: center;
+}
+
+.painelTitulo .destacado {
+  color: var(--corTituloContraste);
+}
+
+
+.painelImagem {
+  margin-bottom: 16px;
+}
+
+.painelBotao {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+
+ .listaSimbolos {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.simbolo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.js .simbolo {
+  cursor: pointer;
+
+}
+.simbolo p {
+  text-align: center;
+  max-width: 20ch;
+  color: var(--corS03);
+  font-size: var(--tamanhoParagrafo);
+  font-weight: var(--pesoRegular);
+  line-height: var(--alturaTexto);
+  margin-bottom: 32px;
+}
+.js .simbolo p {
+  display: none;
+}
+
+/* SEM A CLASSE .JS O TEXTO APARECERÁ NORMALMENTE POR ESPECIFICIDADE DE SELETOR NO CSS. O JS SÓ SERÁ REMOVIDO DO HTML CASO O USUARIO DESATIVAR O JAVASCRIPT DO NAVEGADOR OU O PROPRIO NAVEGADOR NAO TER SUPORTE AO JAVASCRIPT */
+
+.js .listaTextoSimbolo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.listaTextoSimbolo {
+  display: none;
+}
+
+.js .listaTextoSimbolo p {
+  display: none;
+}
+
+.js .listaTextoSimbolo p.ativo {
+  display: block;
+  color: var(--corS03);
+  font-size: var(--tamanhoParagrafo);
+  font-weight: var(--pesoRegular);
+  line-height: var(--alturaTexto);
+  text-align: center;
+  max-width: 40ch;
+  height: 100px;
+  animation: abrirSuave 0.2s;
+}
+
+
+/* O PATH ALTERA A COR INTERNA DO SVG */
+.js .simboloDirecao.ativo path {
+  stroke: var(--corAlertaAmarelo);
+}
+
+.js .simboloPneu.ativo path,
+.js .simboloInjecao.ativo path,
+.js .simboloAirbag.ativo path,
+.js .simboloAbs.ativo path {
+  fill: var(--corAlertaAmarelo);
+}
+
+.js .simboloFreio.ativo path {
+  fill: var(--corAlertaVermelho);
+}
+.js .simboloDirecao.ativo path {
+  stroke: var(--corAlertaAmarelo);
+}
+
+
+@keyframes abrirSuave{
+  from{
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 600px){
+.painelTitulo{
+  padding-top: 48px;
+}
+
+  .painelTitulo h2{
+    font-size: var(--tamanhoH2m);
+    margin: 0px 16px 32px 16px
+  }
+  .painelTitulo h3{
+    font-size: var(--tamanhoH3m);
+  }
+
+  .simbolo p{
+    font-size: var(--tamanhoParagrafom);
+  }
+
+
+  .js .listaTextoSimbolo p.ativo {
+  font-size: var(--tamanhoParagrafom);
+  margin: 0px 16px;
+  }
+
+}

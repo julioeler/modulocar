@@ -2,7 +2,7 @@
   display: inline-block;
   padding: 16px 28px;
   background-color: var(--corP02);
-  color: var(--corBRANCA);
+  color: var(--corBranca);
   font-weight: var(--pesoBold);
   font-size: 1rem;
   border-radius: 4px;
@@ -13,7 +13,7 @@
   display: inline-block;
   padding: 16px 60px 16px 28px;
   background-color: var(--corE03);
-  color: var(--corBRANCA);
+  color: var(--corBranca);
   font-weight: var(--pesoBold);
   font-size: 1rem;
   border-radius: 4px;
@@ -22,12 +22,25 @@
   position: relative;
 }
 
+.botaoOutlineE03{
+  display: inline-block;
+  padding: 16px 28px;
+  background-color: var(--corPreta);
+  color: var(--corBranca);  
+  font-weight: var(--pesoBold);
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #761400;
+  text-transform: uppercase;
+}
+
 .botaoCheioE03:hover{
   background-color: #1b5385;
 }
 
 .botaoCheioP02:hover{
-  background-color: #761400;
+  background-color: #942e19;
+  transition: 0.2s;
 }
 
 .botaoCheioE03::after {
@@ -40,5 +53,10 @@
 
 .botaoCheioE03:hover::after {
   right: 24px;
+  transition: 0.2s;
+}
+
+.botaoOutlineE03:hover{
+  background-color: #761400;
   transition: 0.2s;
 }

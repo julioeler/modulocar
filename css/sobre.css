@@ -123,7 +123,7 @@
   }
 
   .card:hover{
-    background-color: var(--corBRANCA);
+    background-color: var(--corBranca);
     color: var(--cors01);
     transition: 0s;
   }

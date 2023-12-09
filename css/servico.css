@@ -1,6 +1,6 @@
 .servicoTituloBackground {
   background-color: var(--corS01);
-  color: var(--corBRANCA);
+  color: var(--corBranca);
 }
 
 .servicoConteudo {
@@ -17,7 +17,7 @@
 }
 
 .servicoTituloBackground .destacado {
-  color: var(--corTITULOCONTRASTE);
+  color: var(--corTituloContraste);
 }
 
 .servicoTitulo h3 {
@@ -150,12 +150,12 @@
     align-items: center;
     padding: 16px;
     margin: 0px 32px;
-    border-bottom: 1px solid var(--corBRANCA);
-    border-top: 1px solid var(--corBRANCA);
+    border-bottom: 1px solid var(--corBranca);
+    border-top: 1px solid var(--corBranca);
   }
 
   .js .servicoTitulo.ativo {
-    background-color: var(--corBRANCA);
+    background-color: var(--corBranca);
     color: var(--corS01);
   }
 

@@ -9,10 +9,11 @@
   --corS03: #999999;
   --corS04: #BABABA;
   --corS05: #D7DBDC;
-  --corBRANCA: #FFFFFF;
-  --corALERTA: #FED301;
-  --corALERTAVERMELHO: #A81926;
-  --corTITULOCONTRASTE: #AE1D00;
+  --corBranca: #FFFFFF;
+  --corPreta: #000000;
+  --corAlertaAmarelo: #FED301;
+  --corAlertaVermelho: #A81926;
+  --corTituloContraste: #AE1D00;
 
 
   /* FONTE ESTILOS*/
@@ -26,7 +27,7 @@
   --tamanhoH1: 3.375rem;
   --tamanhoH2: 2.5rem;
   --tamanhoH3: 1.875rem;
-  --tamanhoTITULO: 4rem;
+  --tamanhoTitulo: 4rem;
   --tamanhoParagrafo: 1.375rem;
   --tamanhoLink: 1rem;
 
@@ -35,7 +36,7 @@
   --tamanhoH1m: 2rem;
   --tamanhoH2m: 1.875rem;
   --tamanhoH3m: 1rem;
-  --tamanhoTITULOm: 1.375rem;
+  --tamanhoTitulom: 1.375rem;
   --tamanhoParagrafom: 1rem;
   --tamanhoLinkm: 0.75rem;
 
