@@ -37,6 +37,7 @@
   display: flex;
   gap: 32px;
   overflow-x: auto;
+  justify-content: center;
 }
 
 .card {
@@ -91,6 +92,11 @@
   margin-bottom: 100px;
 }
 
+@media (max-width: 1200px){
+  .sobreCard {
+    justify-content: start;
+}
+}
 
 @media(max-width: 600px) {
   .sobre {
