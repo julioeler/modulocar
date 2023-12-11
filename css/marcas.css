@@ -1,47 +1,48 @@
-.marcasBackground{
+.marcasBackground {
   background: linear-gradient(#000, #333);
 }
 
-.marcas{
+.marcas {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 16px;
   box-sizing: border-box;
 }
 
-.marcasTitulo{
+.marcasTitulo {
   font-size: var(--tamanhoTitulo);
   font-weight: var(--pesoBold);
   line-height: var(--alturaTitulo);
   letter-spacing: 6px;
   text-align: center;
   padding-bottom: 64px;
-  padding-top: 80px ;
+  padding-top: 80px;
   color: var(--corS05);
 }
 
-.marcasLista{
+.marcasLista {
   display: flex;
   align-items: end;
   gap: 32px;
 }
-.marcasLista li span{
+
+.marcasLista li span {
   display: block;
   text-align: center;
   margin-bottom: 16px;
   font-size: var(--tamanhoParagrafo);
-  font-weight: var(--pesoBold);
+  font-weight: var(--pesoRegular);
   line-height: var(--alturaParagrafo);
   color: var(--corS04);
 }
 
-.marcasLista img{
+.marcasLista img {
   width: 100%;
   object-fit: cover;
   margin-bottom: 64px;
 }
 
-.marcas h3{
+.marcas h3 {
   text-align: center;
   font-size: var(--tamanhoH3);
   font-weight: var(--pesoRegular);
@@ -51,40 +52,39 @@
 }
 
 
-.marcasBotao{
+.marcasBotao {
   display: flex;
   justify-content: center;
 }
 
-.marcasBotao a{
+.marcasBotao a {
   width: 300px;
   text-align: center;
   margin-bottom: 80px;
 }
 
 
-@media (max-width: 600px)
-{
-  .marcasTitulo{
+@media (max-width: 600px) {
+  .marcasTitulo {
     font-size: var(--tamanhoTitulom);
     letter-spacing: 4px;
     padding: 48px 0px;
   }
 
-  .marcas h3{
+  .marcas h3 {
     font-size: var(--tamanhoTitulom);
   }
 
-  .marcasLista li span{
+  .marcasLista li span {
     font-size: var(--tamanhoTitulom);
   }
 
-  .marcasLista{
+  .marcasLista {
     flex-direction: column;
-    align-items:center ;
-  } 
+    align-items: center;
+  }
 
-  .marcasLista li img{
+  .marcasLista li img {
     width: 300px;
     margin-bottom: 32px;
   }
