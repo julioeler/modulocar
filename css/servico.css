@@ -52,7 +52,7 @@
 
  .servicoConteudo p {
   font-size: var(--tamanhoParagrafo);
-  line-height: var(--alturaTexto);
+  line-height: var(--alturaParagrafo);
   color: var(--corS02);
   margin-top: 80px;
   max-width: 60ch;

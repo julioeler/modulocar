@@ -32,7 +32,7 @@
 .mainParagrafo {
   font-size: var(--tamanhoParagrafo);
   color: var(--corS02);
-  line-height: var(--alturaTexto);
+  line-height: var(--alturaParagrafo);
   margin-bottom: 16px;
 }
 

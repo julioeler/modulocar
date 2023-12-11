@@ -28,7 +28,7 @@
   text-align: center;
   max-width: 80ch;
   font-size: var(--tamanhoParagrafo);
-  line-height: var(--alturaTexto);
+  line-height: var(--alturaParagrafo);
   margin-bottom: 80px;
 
 }
@@ -59,13 +59,13 @@
   transition: 0.15s;
 }
 
-.cardImagem img{
+.cardImagem img {
   margin-bottom: 32px;
 }
 
 .cardTitulo {
   font-size: var(--tamanhoParagrafo);
-  line-height: var(--alturaTexto);
+  line-height: var(--alturaParagrafo);
   font-weight: var(--pesoBold);
   text-align: center;
   margin-bottom: 32px;
@@ -76,7 +76,7 @@
 
 .cardTexto {
   font-size: var(--tamanhoParagrafo);
-  line-height: var(--alturaTexto);
+  line-height: var(--alturaParagrafo);
 }
 
 .cardTexto .destacado {
@@ -92,10 +92,10 @@
   margin-bottom: 100px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .sobreCard {
     justify-content: start;
-}
+  }
 }
 
 @media(max-width: 600px) {
@@ -128,7 +128,7 @@
     margin-bottom: 16px;
   }
 
-  .card:hover{
+  .card:hover {
     background-color: var(--corBranca);
     color: var(--cors01);
     transition: 0s;

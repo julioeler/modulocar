@@ -72,7 +72,7 @@
   color: var(--corS03);
   font-size: var(--tamanhoParagrafo);
   font-weight: var(--pesoRegular);
-  line-height: var(--alturaTexto);
+  line-height: var(--alturaParagrafo);
   margin-bottom: 32px;
 }
 .js .simbolo p {
@@ -101,7 +101,7 @@
   color: var(--corS03);
   font-size: var(--tamanhoParagrafo);
   font-weight: var(--pesoRegular);
-  line-height: var(--alturaTexto);
+  line-height: var(--alturaParagrafo);
   text-align: center;
   max-width: 40ch;
   height: 100px;
@@ -157,7 +157,6 @@
   .simbolo p{
     font-size: var(--tamanhoParagrafom);
   }
-
 
   .js .listaTextoSimbolo p.ativo {
   font-size: var(--tamanhoParagrafom);
