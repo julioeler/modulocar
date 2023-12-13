@@ -5,16 +5,17 @@
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   box-sizing: border-box;
   margin: 0 auto;
   gap: 32px;
-  padding: 0px 0px 0px 16px;
+  padding: 0px 0px 0px 32px;
 }
 
 .mainConteudo {
   grid-column: 1;
   align-self: center;
+  justify-self: end;
   margin-top: 80px;
   margin-bottom: 128px;
 }
@@ -23,6 +24,7 @@
   font-size: var(--tamanhoH1);
   line-height: var(--alturaTitulo);
   margin-bottom: 16px;
+  max-width: 20ch;
 }
 
 .mainTitulo .destacado {
@@ -34,6 +36,7 @@
   color: var(--corS02);
   line-height: var(--alturaParagrafo);
   margin-bottom: 16px;
+  max-width: 50ch;
 }
 
 .mainParagrafo .destacado {
