@@ -79,11 +79,12 @@
   }
   
   .mainImagem {
-    display: none;
+ display: none;
   }
   
   .mainBackground {
     content: '';
+    background-image: url("../imagens/carros/peugeotMainMobile.webp");
     background-image: url("../imagens/carros/peugeotMainMobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;

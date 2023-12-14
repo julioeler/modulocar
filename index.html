@@ -11,6 +11,7 @@
     document.documentElement.className += ' js';
   </script>
   <!-- CASO O USUARIO ESTEJA COM BROWSER ANTIGO OU SEM SUPORTE DE JS, utiliza o className por ser uma convenção mais antiga e funcionar também em navegadores antigos -->
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
   <header class="headerBackground">
     <div class="header">
       <div>
-        <a href="/index.html"><img src="./imagens/icones/logo.svg" alt=""></a>
+        <a aria-label="Voltar para a tela inicial" href="/index.html"><img src="./imagens/icones/logo.svg" width="176" height="41" alt="Icone Logo"></a>
       </div>
       <nav>
         <div class="menuHamburguer jsMenuHamburguer">
@@ -34,9 +35,9 @@
           </div>
         </div>
         <ul class="headerMenu jsHeaderMenu">
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#sobrenos">Sobre Nós</a></li>
+          <li><a aria-label="Abrir página com serviços da oficina" href="#servicos">Serviços</a></li>
+          <li><a aria-label="Abrir página com o contato e endereço da oficina" href="#contato">Contato</a></li>
+          <li><a aria-label="Abrir página com história da oficina" href="#sobrenos">Sobre Nós</a></li>
         </ul>
       </nav>
     </div>
@@ -48,13 +49,14 @@
           MERECE <span class="destacado">TECNOLOGIA</span></h1>
         <p class="mainParagrafo">A MóduloCar é a oficina especializada em <span class="destacado">eletrônica</span> e
           <span class="destacado">diagnóstico</span> automotivo que o seu veículo precisa.</p>
-        <a target="_blank"
+        <a aria-label="Abrir whatsapp da oficina e iniciar conversa" target="_blank"
           href="https://wa.me/5531986996159/?text=Olá,%20vi%20o%20seu%20site,%20gostaria%20de%20agendar%20um%20horário!"
           class="botaoAgendar botaoCheioP02">AGENDAR HORÁRIO</a>
       </div>
-      <div class="mainImagem">
-        <img src="./imagens/carros/peugeotcarro.jpg" alt="Carro Peugeot">
-      </div>
+      <picture class="mainImagem">
+        <source srcset="./imagens/carros/peugeotMain.webp"  type="image/webp">
+        <img src="./imagens/carros/peugeotMain.jpg" width="1400" height="1216" alt="Carro Peugeot">
+      </picture>
     </div>
   </main>
   <section class="sobre">
@@ -66,7 +68,7 @@
     <div class="sobreCard">
       <div class="card">
         <div class="cardImagem">
-          <img src="./imagens/icones/verificadoIcon.svg" alt="Icone Verificado">
+          <img src="./imagens/icones/verificadoIcon.svg" width="67" height="84" alt="Icone Verificado">
         </div>
         <h3 class="cardTitulo">PROFISSIONAIS QUALIFICADOS</h3>
         <p class="cardTexto">Independentemente da marca do seu veículo, estamos prontos para atendê-lo. Nossa equipe tem
@@ -76,7 +78,7 @@
       </div>
       <div class="card">
         <div class="cardImagem">
-          <img src="./imagens/icones/caboIcon.svg" alt="Icone Cabo de conexão">
+          <img src="./imagens/icones/caboIcon.svg" width="76" height="75" alt="Icone Cabo de conexão">
         </div>
         <h3 class="cardTitulo">TECNOLOGIA AVANÇADA</h3>
         <p class="cardTexto">Na era da tecnologia, contamos com equipamentos <span class="destacado">modernos</span> e
@@ -85,7 +87,7 @@
       </div>
       <div class="card">
         <div class="cardImagem">
-          <img src="./imagens/icones/precisaoIcon.svg" alt="Icone Diagnosticar">
+          <img src="./imagens/icones/precisaoIcon.svg" width="84" height="80" alt="Icone Diagnosticar">
         </div>
         <h3 class="cardTitulo">DIAGNÓSTICO PRECISO</h3>
         <p class="cardTexto">Nossa verdadeira especialidade está na <span class="destacado">eletrônica</span>
@@ -106,11 +108,11 @@
       <div class="servicoTituloBackground">
         <div class="servicoTitulo jsServicoTitulo ativo">
           <h3>Injeção Eletrônica</h3>
-          <img src="./imagens/icones/setaLista.svg" alt="Icone Seta">
+          <img src="./imagens/icones/setaLista.svg" width="10" height="6" alt="Icone Seta">
         </div>
       </div>
       <div class="servicoConteudo jsServicoConteudo ativo">
-        <img src="./imagens/pessoas/pessoaInjecao.png" alt="Pessoa segurando um módulo de injeção">
+        <img src="./imagens/pessoas/pessoaInjecao.png" width="718" height="880" alt="Pessoa segurando um módulo de injeção">
         <p>Nossa oficina é especializada em eletrônica automotiva e realizamos reparos nos módulos eletrônicos da
           injeção eletrônica.
           <br><br>
@@ -122,11 +124,11 @@
       <div class="servicoTituloBackground">
         <div class="servicoTitulo jsServicoTitulo">
           <h3>Painel de Instrumentos</h3>
-          <img src="./imagens/icones/setaLista.svg" alt="Icone seta">
+          <img src="./imagens/icones/setaLista.svg" width="10" height="6" alt="Icone seta">
         </div>
       </div>
       <div class="servicoConteudo jsServicoConteudo">
-        <img src="./imagens/pessoas/pessoaPainel.png" alt="Pessoa segurando um painel de veículo">
+        <img src="./imagens/pessoas/pessoaPainel.png" width="718" height="880" alt="Pessoa segurando um painel de veículo">
         <p>Também oferecemos serviços de reparo do painel de instrumentos do veículo. Sabemos o quão importante é ter
           informações precisas e claras sobre o funcionamento do seu veículo enquanto você está dirigindo.
           <br><br>
@@ -138,11 +140,11 @@
       <div class="servicoTituloBackground">
         <div class="servicoTitulo jsServicoTitulo">
           <h3>Sistema de Freios Antitravamento - ABS</h3>
-          <img src="./imagens/icones/setaLista.svg" alt="Icone Seta">
+          <img src="./imagens/icones/setaLista.svg" width="10" height="6" alt="Icone Seta">
         </div>
       </div>
       <div class="servicoConteudo jsServicoConteudo">
-        <img src="./imagens/pessoas/pessoaABS.png" alt="Pessoa Segurando Módulo de ABS">
+        <img src="./imagens/pessoas/pessoaABS.png" width="720" height="880" alt="Pessoa Segurando Módulo de ABS">
         <p>O ABS é projetado para evitar o travamento das rodas durante a frenagem, permitindo que o motorista mantenha
           o controle total do veículo, mesmo em condições adversas
           <br><br>
@@ -151,7 +153,7 @@
       </div>
     </div>
     <div class="servicosBotao">
-      <a class="botaoCheioE03" href="">MAIS SERVIÇOS</a>
+      <a aria-label="Abrir página com serviços da oficina" class="botaoCheioE03" href="">MAIS SERVIÇOS</a>
     </div>
   </section>
   <section class="painelBackground">
@@ -160,7 +162,8 @@
         <h3>A LUZ ACENDEU?</h3>
         <h2>NÓS TEMOS A <span class="destacado">SOLUÇÃO</span></h2>
       </div>
-      <div class="painelImagem"><img src="./imagens/outros/painelCompleto.jpg" alt="Painel de instrumentos de veículo">
+      <div class="painelImagem">
+        <img src="./imagens/outros/painelCompleto.jpg" width="1400" height="560" alt="Painel de instrumentos de veículo">
       </div>
       <ul class="listaSimbolos jsListaSimbolos">
         <li class="simbolo">
@@ -281,7 +284,7 @@
         </li>
       </ul>
       <div class="painelBotao">
-        <a class="botaoOutlineE03"
+        <a aria-label="Abrir whatsapp da oficina e iniciar conversa" class="botaoOutlineE03"
           href="https://wa.me/5531986996159/?text=Olá,%20vi%20o%20seu%20site,%20gostaria%20de%20agendar%20um%20horário!">Agendar
           Horário</a>
       </div>
@@ -292,13 +295,28 @@
       <h2 class="marcasTitulo">MARCAS ESPECIALIZADAS</h2>
       <div>
         <ul class="marcasLista">
-          <li> <span>Peugeot</span> <img src="./imagens/carros/peugeot.png" alt="Carro Peugeot"></li>
-          <li> <span>Mercedes</span> <img src="./imagens/carros/mercedes.png" alt="Carro Mercedes"></li>
-          <li> <span>BMW</span> <img src="./imagens/carros/bmw.png" alt="Carro BMW"></li>
+          <li> <span>Peugeot</span> 
+            <picture>
+              <source srcset="./imagens/carros/peugeot.webp" type="image/webp">
+              <img src="./imagens/carros/peugeot.png" width="740" height="506" alt="Carro Peugeot">
+            </picture>
+            </li>
+          <li> <span>Mercedes</span> 
+            <picture>
+              <source srcset="./imagens/carros/mercedes.webp" type="image/webp">
+              <img src="./imagens/carros/mercedes.png" width="744" height="506" alt="Carro Mercedes">
+            </picture>
+          </li>
+          <li> <span>BMW</span> 
+            <picture>
+              <source srcset="./imagens/carros/bmw.webp" type="image/webp">
+              <img src="./imagens/carros/bmw.png" width="744" height="506" alt="Carro BMW">
+            </picture>
+          </li>
         </ul>
         <h3>Atendemos todas as marcas</h3>
         <div class="marcasBotao">
-          <a class="botaoCheioP02"
+          <a aria-label="Abrir whatsapp da oficina e iniciar conversa" class="botaoCheioP02"
             href="https://wa.me/5531986996159/?text=Olá,%20vi%20o%20seu%20site,%20gostaria%20de%20agendar%20um%20horário!">AGENDAR
             HORÁRIO</a>
         </div>
@@ -327,7 +345,7 @@
     <div class="footer">
       <div class="footerContainer">
         <div class="footerLogo">
-          <a href="/index.html"><img src="./imagens/icones/logo.svg" alt="Logo MóduloCar"></a>
+          <a aria-label="Voltar para a tela inicial" href="/index.html"><img src="./imagens/icones/logo.svg" width="176" height="41" alt="Logo MóduloCar"></a>
         </div>
         <div class="footerConteudo">
           <div class="footerContato">
@@ -338,17 +356,17 @@
             </div>
             <hr>
             <div class="contato">
-              <a href="https://maps.app.goo.gl/xCbeXPE72dzBXu9L7">Avenida Presidente Tancredo de Almeida Neves,
+              <a aria-label="Abrir google maps com o endereço da oficina" href="https://maps.app.goo.gl/xCbeXPE72dzBXu9L7">Avenida Presidente Tancredo de Almeida Neves,
                 N 2013, Bom Jesus </a>
-              <a href="https://maps.app.goo.gl/xCbeXPE72dzBXu9L7">Coronel Fabriciano - MG</a>
+              <a aria-label="Abrir google maps com o endereço da oficina" href="https://maps.app.goo.gl/xCbeXPE72dzBXu9L7">Coronel Fabriciano - MG</a>
             </div>
             <div>
               <ul class="social">
-                <li> <a href="https://www.instagram.com/modulocar/"><img src="./imagens/icones/instagram.svg"
+                <li> <a aria-label="Abrir instagram da oficina" href="https://www.instagram.com/modulocar/"><img src="./imagens/icones/instagram.svg"
                       alt="Icone Instagram"></a> </li>
-                <li> <a href="https://www.facebook.com/people/modulocar/100064211042554/"><img
+                <li> <a aria-label="Abrir facebook da oficina" href="https://www.facebook.com/people/modulocar/100064211042554/"><img
                       src="./imagens/icones/facebook.svg" alt="Icone Facebook"></a> </li>
-                <li> <a
+                <li> <a aria-label="Abrir whatsapp da oficina"
                     href="https://wa.me/5531986996159/?text=Olá,%20vi%20o%20seu%20site,%20gostaria%20de%20agendar%20um%20horário!">
                     <img src="./imagens/icones/whatsapp.svg" alt="Icone Whatsapp"></a></li>
               </ul>
@@ -358,23 +376,23 @@
             <h3>INFORMAÇÕES</h3>
             <ul class="informacoes">
               <li>
-                <a href="">Como Chegar ?</a>
+                <a aria-label="Abrir página com endereço e contato da oficina" href="">Como Chegar ?</a>
               </li>
               <li>
-                <a href="">Serviços</a>
+                <a aria-label="Abrir página com os serviços oferecidos pela oficina" href="">Serviços</a>
               </li>
               <li>
-                <a href="">Sobre Nós</a>
+                <a aria-label="Abrir página coma história da oficina" href="">Sobre Nós</a>
               </li>
               <li>
-                <a href="">Trabalhe Conosco</a>
+                <a aria-label="Abrir página com área de contrato da oficina" href="">Trabalhe Conosco</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <span class="copyright">MóduloCar © 2024 - Todos os direitos reservados. Design e Produção por <a
-          href="https://julioeler.github.io">Julio Eler</a></span>
+         aria-label="Abrir página do desenvolvedor do site" href="https://julioeler.github.io"> <u>Julio Eler</u></a></span>
     </div>
   </footer>
 </body>

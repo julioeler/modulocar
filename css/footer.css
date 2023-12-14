@@ -86,9 +86,12 @@ hr {
     padding: 48px 16px 0px 16px;
   }
 
-.footer a{
-  font-size: var(--tamanhoLinkm);
+.footerContainer{
+  padding: 48px 16px 32px 16px;
 }
+  .footer a {
+    font-size: var(--tamanhoLinkm);
+  }
 
   .footerConteudo {
     flex-direction: column;
@@ -107,7 +110,7 @@ hr {
   }
 
   .social {
-    margin-bottom: 80px;
+    margin-bottom: 48px;
   }
 
   .copyright {

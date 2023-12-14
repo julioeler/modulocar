@@ -47,7 +47,7 @@
   font-size: var(--tamanhoH3);
   font-weight: var(--pesoRegular);
   line-height: var(--alturaTitulo);
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   color: var(--corBranca);
 }
 
