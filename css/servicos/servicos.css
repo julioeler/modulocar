@@ -1,0 +1,45 @@
+.servicos{
+  color: white;
+}
+
+.servicosBackground{
+  background-color: var(--corS01)
+}
+
+.servicosContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.servicosTitulo{
+  margin-bottom: 80px;
+}
+
+.servicosLista{
+  display: flex;
+  gap: 16px 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.servicosLista li{
+  font-size: var(--tamanhoParagrafo);
+  line-height: var(--alturaParagrafo);
+  font-weight: var(--pesoBold);
+  background-color: var(--corP01);
+  padding: 16px;
+  flex-grow: 1;
+  text-align: center;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px){
+  .servicosLista li{
+    font-size: var(--tamanhoParagrafom);
+  }
+.servicosTitulo{
+  margin-bottom: 48px;
+}
+}

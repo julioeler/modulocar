@@ -37,7 +37,7 @@
   background-color: var(--corBranca);
   top:30px;
   transition: 0.1s;
-}
+} 
 
  .js .headerMenu.ativo {
   display: flex;
@@ -58,7 +58,8 @@
   padding: 8px;
 }
 
-.headerMenu a:hover::after{
+.headerMenu a:hover::after,
+.headerMenu a.ativo::after{
 width: 100%;
 }
 
@@ -103,13 +104,19 @@ width: 100%;
 /* A CLASSE .JS FAZ O MENU HAMBURGUER SÓ APARECER CASO O JS ESTIVER ATIVO OU NAVEGADOR DO USUARIO TENHA SUPORTE PARA JS, CASO NÃO, O MENU APARECERÁ NA VERSÃO NORMAL. O JS É INCLUIDO NO HEAD DO HTML */
 
 @media(max-width:600px) {
+
+  .header{
+  flex-wrap: wrap;
+  }
+
 .js .headerMenu  {
     display: none;
     width: inherit;
   }
   
-  .js .headerMenu a:hover::after{
-    width: 0px;
+  .js .headerMenu a:hover::after,
+  .js .headerMenu a.ativo::after{
+    display: none;
   }
 
 .js .menuHamburguer {

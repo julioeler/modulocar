@@ -1,4 +1,4 @@
-// JS HEADER
+// JS HEADER MENU MOBILE
 const MENULISTA = document.querySelector('.jsHeaderMenu');
 const MENU = document.querySelector('.jsMenuHamburguer');
 const MENUICONE = document.querySelector('.jsMenuIcon');
@@ -11,6 +11,21 @@ if (MENU) {
   MENU.addEventListener('click', ativarMenu);
 }
 
+// MENU DESKTOP ATIVO
+
+const LINKSMENU = document.querySelectorAll(".headerMenu a");
+if (LINKSMENU) {
+  function ativarLink(link) {
+    console.log(link);
+    const URL = location.href;
+    const HREF = link.href;
+    if (URL.includes(HREF)) {
+      link.classList.add("ativo");
+    }
+  }
+
+  LINKSMENU.forEach(ativarLink);
+}
 //-----------------------------------------------------
 
 // JS SERVIÇOS
@@ -73,13 +88,15 @@ if (LISTASIMBOLOS) {
 const IMAGEMPAINEL = document.querySelector('.painelImagem img');
 
 // Função para trocar a imagem quando a largura da tela for maior ou igual a 600px
-function trocarImagem() {
-  if (window.innerWidth <= 600) {
-    IMAGEMPAINEL.src = "./imagens/outros/painelMobile.jpg";
-  } else {
-    IMAGEMPAINEL.src = "./imagens/outros/painelCompleto.jpg";
+if (IMAGEMPAINEL) {
+  function trocarImagem() {
+    if (window.innerWidth <= 600) {
+      IMAGEMPAINEL.src = "./imagens/outros/painelMobile.jpg";
+    } else {
+      IMAGEMPAINEL.src = "./imagens/outros/painelCompleto.jpg";
+    }
   }
-}
+};
 
 window.addEventListener('load', trocarImagem);
 window.addEventListener('resize', trocarImagem);
