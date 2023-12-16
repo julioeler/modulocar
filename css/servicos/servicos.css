@@ -1,30 +1,32 @@
-.servicos{
+.servicos {
   color: white;
 }
 
-.servicosBackground{
+.servicosBackground {
   background-color: var(--corS01)
 }
 
-.servicosContainer{
+.servicosContainer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px 16px;
+  padding: 80px 16px;
 }
 
-.servicosTitulo{
+.servicosTitulo h2 {
+  font-size: var(--tamanhoH2);
+  font-weight: var(--pesoBold);
+  line-height: var(--alturaTitulo);
   margin-bottom: 80px;
 }
 
-.servicosLista{
+.servicosLista {
   display: flex;
   gap: 16px 8px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 48px;
 }
 
-.servicosLista li{
+.servicosLista li {
   font-size: var(--tamanhoParagrafo);
   line-height: var(--alturaParagrafo);
   font-weight: var(--pesoBold);
@@ -35,11 +37,93 @@
   border-radius: 10px;
 }
 
-@media (max-width: 600px){
-  .servicosLista li{
+@media (max-width: 600px) {
+
+  .servicosContainer {
+    padding: 48px 16px;
+  }
+
+  .servicosTitulo h2 {
+    font-size: var(--tamanhoH2m);
+    margin-bottom: 48px;
+  }
+
+  .servicosLista {
+    padding: 0px;
+  }
+
+  .servicosLista li {
     font-size: var(--tamanhoParagrafom);
   }
-.servicosTitulo{
-  margin-bottom: 48px;
+
+  .servicosTitulo {
+    margin-bottom: 48px;
+  }
 }
+
+/* -------------------------GALERIA SERVIÇOS---------------- */
+.galeriaContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 16px;
+}
+
+.galeriaTitulo h2 {
+  color: var(--corS01);
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: var(--tamanhoH2);
+  font-weight: var(--pesoBold);
+  line-height: var(--alturaTitulo);
+}
+
+.galeriaLista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px 32px;
+  justify-content: center;
+}
+
+.galeriaLista li {
+  flex-grow: 1;
+  flex-basis: 340px;
+}
+
+.galeriaLista img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.galeriaLista li span {
+  color: var(--corBranca);
+  font-size: var(--tamanhoLink);
+  line-height: var(--tamanhoParagrafo);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--corP01);
+  padding: 8px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.galeriaBotao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 600px) {
+
+  .galeriaContainer {
+    padding: 48px 16px;
+
+  }
+
+  .galeriaTitulo h2 {
+    font-size: var(--tamanhoH2m);
+    margin-bottom: 48px;
+  }
+
+  .galeriaLista {
+    gap: 32px;
+  }
 }

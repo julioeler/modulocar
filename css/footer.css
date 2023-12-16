@@ -12,6 +12,10 @@
   padding: 16px 0px;
 }
 
+.footer a:hover{
+  color: var(--corP02);
+}
+
 .footerContainer {
   max-width: 1200px;
   box-sizing: border-box;
@@ -57,6 +61,9 @@
   margin-bottom: 48px;
 }
 
+.social li:hover {
+transform: scale(1.2);
+}
 hr {
   border-color: #111;
 }
