@@ -1,0 +1,12 @@
+.sobrenosContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 16px;
+}
+
+
+.sobrenosContainer h2{
+  font-size: var(--tamanhoH2);
+  font-weight: var(--pesoBold) ;
+  line-height: var(--alturaTitulo);
+}
