@@ -50,6 +50,9 @@
   margin-bottom: 80px;
 }
 
+.contatoItem a{
+  padding: 16px 0px;
+}
 .contatoItem a:hover{
   color: var(--corS03);
 }
