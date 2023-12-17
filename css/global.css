@@ -47,6 +47,12 @@ html {
   color: var(--corS01);
 }
 
+html.ativo{
+  font-size: 20px;
+}
+
+
+
 body,html,
 h1,
 h2,
