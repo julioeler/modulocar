@@ -16,7 +16,6 @@ if (MENU) {
 const LINKSMENU = document.querySelectorAll(".headerMenu a");
 if (LINKSMENU) {
   function ativarLink(link) {
-    console.log(link);
     const URL = location.href;
     const HREF = link.href;
     if (URL.includes(HREF)) {
