@@ -79,3 +79,19 @@ a {
 ul {
   list-style: none;
 }
+
+
+button{
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: var(--pesoBold);
+}
+
+button.ativo{
+  background-color: #fff;
+  color: #000;
+}

@@ -91,3 +91,39 @@ if (IMAGEMPAINEL) {
 
 window.addEventListener('load', trocarImagem);
 window.addEventListener('resize', trocarImagem);
+
+
+// CLICAR BOTAO ACESSIBILIDADE
+
+const BOTAOFONTE = document.getElementById('botaoFonte');
+const DOCUMENTO = document.documentElement;
+
+if (localStorage.getItem('classeAtiva') === 'true') {
+  DOCUMENTO.classList.add('ativo');
+}
+
+if (localStorage.getItem('classeAtiva') === 'true') {
+  BOTAOFONTE.classList.add('ativo');
+}
+
+if (BOTAOFONTE) {
+  function trocarFonte() {
+    DOCUMENTO.classList.toggle('ativo');
+    BOTAOFONTE.classList.toggle('ativo');
+
+    if (DOCUMENTO.classList.contains('ativo')) {
+      localStorage.setItem('classeAtiva', 'true');
+    } else {
+      localStorage.removeItem('classeAtiva');
+    }
+
+    if (BOTAOFONTE.classList.contains('ativo')) {
+      localStorage.setItem('classeAtiva', 'true');
+    } else {
+      localStorage.removeItem('classeAtiva');
+    }
+  };
+}
+
+
+BOTAOFONTE.addEventListener('click', trocarFonte);
