@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="MóduloCar. A sua oficina especializada em diagnóstico automotivo e chaves codificadas.">
+  <meta http-equiv="Cache-Control" content="max-age=604800, public">
+  <link rel="shortcut icon" href="./imagens/icones/favicon.svg" type="image/x-icon" sizes="16x16 32x32 48x48">
+  <script>
+    document.documentElement.className += ' js';
+  </script>
+  <!-- CASO O USUARIO ESTEJA COM BROWSER ANTIGO OU SEM SUPORTE DE JS, utiliza o className por ser uma convenção mais antiga e funcionar também em navegadores antigos -->
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <title>MóduloCar | Contato</title>
+</head>
+
+<body>
+  <header class="headerBackground">
+    <div class="header">
+      <div>
+        <a aria-label="Tela Inicial" href="/index.html"><img src="./imagens/icones/logo.svg" width="176" height="41"
+            alt="Icone Logo"></a>
+      </div>
+      <nav>
+        <div class="menuHamburguer jsMenuHamburguer">
+          <p>MENU</p>
+          <div class="menuIcon jsMenuIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="headerMenu jsHeaderMenu">
+          <li><a aria-label="Serviços" href="./servicos.html">Serviços</a></li>
+          <li><a aria-label="Contato" href="./contato.html">Contato</a></li>
+          <li><a aria-label="Sobre Nós" href="./sobrenos.html">Sobre Nós</a></li>
+          <li><button id="botaoFonte">A+</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contatoContainer">
+    <div class="contatoTitulo">
+      <h2>ONDE ESTAMOS?</h2>
+    </div>
+    <div class="contatoConteudo">
+      <div class="contatoMapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.5939549064638!2d-42.626734425909355!3d-19.516097681781215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa555ad34b0a115%3A0xd606f981a7774137!2sM%C3%B3duloCar!5e0!3m2!1spt-BR!2sbr!4v1702774664522!5m2!1spt-BR!2sbr"
+          width="800" height="600" style="border:1;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="contatoForm">
+        <h3>ENTRE EM CONTATO</h3>
+        <form action="#" method="GET">
+          <fieldset>
+            <div class="formItem">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="formItem">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="formItem">
+              <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+                placeholder="Digite aqui sua mensagem"></textarea>
+            </div>
+            <div class="formItem">
+              <button>Enviar</button>
+            </div>
+        </form>
+        </fieldset>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footerBackground">
+    <div class="footer">
+      <div class="footerContainer">
+        <div class="footerLogo">
+          <a aria-label="Tela Inicial" href="/index.html"><img src="./imagens/icones/logo.svg" width="176" height="41"
+              alt="Logo MóduloCar"></a>
+        </div>
+        <div class="footerConteudo">
+          <div class="footerContato">
+            <h3>CONTATO</h3>
+            <div class="contato">
+              <a aria-label="Email" href="mailto:modulocar@yahoo.com">modulocar@yahoo.com</a>
+              <a aria-label="Telefone" href="tel:31986996159">+55 (31) 98699-6159</a>
+            </div>
+            <hr>
+            <div class="contato">
+              <a aria-label="Google Maps" href="https://maps.app.goo.gl/xCbeXPE72dzBXu9L7">Avenida Presidente Tancredo
+                de Almeida Neves,
+                N 2013, Bom Jesus </a>
+              <a aria-label="Google Maps" href="https://maps.app.goo.gl/xCbeXPE72dzBXu9L7">Coronel Fabriciano - MG</a>
+            </div>
+            <div>
+              <ul class="social">
+                <li> <a aria-label="instagram" href="https://www.instagram.com/modulocar/"><img width="32" height="32"
+                      src="./imagens/icones/instagram.svg" alt="Icone Instagram"></a> </li>
+                <li> <a aria-label="facebook" href="https://www.facebook.com/people/modulocar/100064211042554/"><img
+                      width="32" height="32" src="./imagens/icones/facebook.svg" alt="Icone Facebook"></a> </li>
+                <li> <a aria-label="whatsapp"
+                    href="https://wa.me/5531986996159/?text=Olá,%20vi%20o%20seu%20site,%20gostaria%20de%20agendar%20um%20horário!">
+                    <img width="32" height="32" src="./imagens/icones/whatsapp.svg" alt="Icone Whatsapp"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footerInformacoes">
+            <h3>INFORMAÇÕES</h3>
+            <ul class="informacoes">
+              <li>
+                <a aria-label="Contato" href="./contato.html">Como Chegar ?</a>
+              </li>
+              <li>
+                <a aria-label="Serviços" href="./servicos.html">Serviços</a>
+              </li>
+              <li>
+                <a aria-label="Sobre Nós" href="./sobrenos.html">Sobre Nós</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <span class="copyright">MóduloCar © 2024 - Todos os direitos reservados. Design e Produção por <a
+          aria-label="Abrir página do desenvolvedor do site" href="https://julioeler.github.io"> <u>Julio
+            Eler</u></a></span>
+    </div>
+  </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>

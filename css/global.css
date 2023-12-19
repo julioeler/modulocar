@@ -60,7 +60,7 @@ h3,
 p,
 span,
 li,
-ul, section, dl {
+ul, section, dl, fieldset {
   margin: 0px;
   padding: 0px;
 }
